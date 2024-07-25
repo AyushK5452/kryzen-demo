@@ -27,5 +27,5 @@ pip install esptool
 
 ## UID Instructions
 
-* `esptool.py read_mac`
+* `esptool.py read_mac`\n
 Note the MAC address from the output, as it is UID of the device.
