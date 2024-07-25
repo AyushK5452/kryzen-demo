@@ -30,4 +30,5 @@ esptool.py --chip esp32c6 -b 460800 --before=default_reset --after=hard_reset wr
 ## UID Instructions
 
 * `esptool.py read_mac`
+
 Note the MAC address from the output, as it is UID of the device.
