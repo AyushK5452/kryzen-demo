@@ -1,4 +1,4 @@
-# demeter
+# Demeter
 
 The hydroBUILD firmware.
 
@@ -22,10 +22,12 @@ pip install esptool
 
 ## Flashing Instructions
 
-* `esptool.py --chip esp32c6 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 8MB 0x0 bootloader/bootloader.bin 0x10000 ESP32-MQTT.bin 0x8000 partition_table/partition-table.bin`
+```bash
+esptool.py --chip esp32c6 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 8MB 0x0 bootloader/bootloader.bin 0x10000 ESP32-MQTT.bin 0x8000 partition_table/partition-table.bin
+```
 
 
 ## UID Instructions
 
-* `esptool.py read_mac`\n
+* `esptool.py read_mac`
 Note the MAC address from the output, as it is UID of the device.
